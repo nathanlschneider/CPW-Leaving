@@ -1,0 +1,85 @@
+@mixin box {
+    border-radius: 5px;
+}
+
+.config {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_box {
+        position: fixed;
+        background: white;
+        width: 80%;
+        height: auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        @include box;
+        background-color: #ebebeb;
+    }
+    .x-icon {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    &_title {
+        font-size: 96px;
+        margin: 0 0 0 50px;
+    }
+
+    &_rule {
+        margin-left: 50px;
+        width: calc(100% - 100px);
+    }
+
+    &_container {
+        display: flex;
+        justify-content: space-around;
+        margin: 50px;
+
+        &-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            font-size: 68px;
+        }
+        &-right {
+            display: flex;
+            flex-direction: column;
+            font-size: 68px;
+        }
+        &-input {
+            height: 300px;
+        }
+
+        &-label {
+            padding: 20px;
+        }
+        &-checkbox {
+            margin: 20px;
+            width: 35px;
+            height: 35px;
+        }
+        .range_input {
+            margin-top: 20px;
+            padding: 20px;
+        }
+        .range_text {
+            font-size: 32px;
+        }
+
+        .range_group {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

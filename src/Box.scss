@@ -1,0 +1,102 @@
+@import './colors.scss';
+
+.box-blue-bg {
+    background-color: $box-blue-bg !important;
+}
+.box-wrapper {
+   transition: 3s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.device-box {
+    align-items: center;
+    background-color: $box-grey-bg;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: center;
+    margin: 10px;
+    transition-duration: 2s;
+    width: 300px;
+
+    .device-name {
+        color: $box-light;
+        font-size: 120px;
+    }
+
+    .device-conType {
+        color: $box-good;
+        font-size: 72px;
+    }
+
+    .secondary {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $box-secondary-bg;
+        width: 100%;
+        height: 100%;
+        border-radius: 0 0 20px 20px;
+
+        .device-status {
+            text-transform: capitalize;
+            font-size: 48px;
+            color: $box-dark;
+        }
+    }
+}
+
+.fade-out-no-display {
+    animation: 1s fade-out-no-display;
+    animation-fill-mode: both;
+}
+
+@keyframes longColorFade {
+    0% {
+        background-color: $p0;
+    }
+    14% {
+        background-color: $p14;
+    }
+    28% {
+        background-color: $p28;
+    }
+    42% {
+        background-color: $p42;
+    }
+    57% {
+        background-color: $p57;
+    }
+    71% {
+        background-color: $p71;
+    }
+    85% {
+        background-color: $p85;
+    }
+    100% {
+        background-color: $p100;
+    }
+}
+
+@keyframes fade-out-no-display {
+    0% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}

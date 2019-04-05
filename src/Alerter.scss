@@ -1,0 +1,19 @@
+.alerter-box{
+    position: absolute;
+    top: calc(50vh - 100px);
+    z-index: 50;
+    color: red;
+    background-color: pink;
+    width: 450px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: .5s fade;
+    border-radius: 5px;
+}
+
+@keyframes fade {
+    0%{opacity:0}
+    100%{opacity:1}
+}

@@ -1,0 +1,52 @@
+.nav-bar {
+   
+    bottom: 0;
+    position: fixed;
+    background-color: #00000055;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    transition: 0.5s all;
+   
+   .logo {
+       font-size: 46px;
+   }
+    .nav-buttons {
+        display: flex;
+    }
+    .menu-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 30px;
+        width: 50px;
+        margin: 10px;
+        &:hover {
+            opacity: 0.4;
+        }
+
+        &:active {
+            transform: scale(.95);
+        }
+
+        .menu-button-bar {
+            width: 45px;
+            height: 4px;
+            background-color: white;
+            border-radius: 2px;
+        }
+    }
+
+    .slider {
+        opacity: .3;
+    }
+}
+.hide {
+    opacity: 0;
+}

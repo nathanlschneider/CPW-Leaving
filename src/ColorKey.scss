@@ -1,0 +1,33 @@
+@import './colors.scss';
+
+.key-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+    justify-content: space-between;
+    width: 560px;
+    .key-container--left {
+        .key-hours {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .color-key {
+            height: 20px;
+            width: 500px;
+            background: linear-gradient(90deg, $p0 0%, $p14 14%, $p28 28%, $p42 42%, $p57 57%, $p71 71%, $p85 85%, $p100 100%);
+        }
+    }
+    .key-container--right {
+        .key-right-label{}
+        .grey-block {
+            height: 20px;
+            width: 40px;
+            background-color: lightgrey;
+        }
+    }
+
+}
+
+
+
